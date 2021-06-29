@@ -1,0 +1,288 @@
+/* Définition polices */
+
+/* Police texte */
+@font-face
+{
+    font-family: 'Roboto';
+    src: url('fonts/Roboto-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face
+{
+    font-family: 'Roboto-bold';
+    src: url('fonts/Roboto-Bold.ttf') format('truetype');
+    font-weight: bold;
+}
+
+@font-face
+{
+    font-family: 'Roboto-italic';
+    src: url('fonts/Roboto-Italic.ttf') format('truetype');
+    font-style: italic;
+}
+
+/* Police logo et titre */
+@font-face
+{
+    font-family: 'Shrikhand';
+    src: url('fonts/Shrikhand-Regular.ttf') format('truetype');
+
+}
+
+/*Définition body*/
+
+body
+{
+    font-family: 'Roboto';
+    color: black;
+    margin: 0%;
+}
+
+#Logosite, h1, h2, h3
+{
+    font-family: 'Shrikhand';
+}
+
+a:link
+{
+    text-decoration: none;
+    color: black;
+}
+
+/* Mise en page logo */
+#Logosite
+{
+    text-align: center;
+    padding-top: 7%;
+    padding-bottom: 2%;
+    img{
+        width: 50%;
+    }
+}
+
+/* Mise en page Recherche */
+#Recherche
+{
+    text-align: center;
+    width: 100%;
+}
+
+#Lieu
+{
+    display: flex;
+    background-color: #EAEAEA;
+    padding-left: 30%;
+    padding-top: 4%;
+    padding-bottom: 3%;
+    i
+    {
+        font-size: 1.15em;
+    }
+
+    input
+    {
+        font-size: 1em;
+        border-style: none;
+        padding-left: 8%;
+        padding-top: 1%;
+    }
+}
+
+#Reservation
+{
+    background-color: #F6F6F6;
+    padding-top: 5%;
+    padding-bottom: 10%;
+    h1
+    {
+        margin: 0%;
+    }
+    p
+    {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    button
+    {
+        background-image:linear-gradient(#FF79DA, #9356DC);
+        padding-top: 3%;
+        padding-bottom: 3%;
+        padding-left: 6%;
+        padding-right: 6%;
+        border-radius: 50px;
+        border: none;
+        color: white;
+    }
+}
+
+/* Mise en page Fonctionnements */
+#Fonctionnement
+{
+    margin-left: 5%;
+}
+
+.Fonctionnement
+{
+    display: flex;
+    margin: 5% 2% 5% 2%;
+    padding-bottom: 3%;
+    padding-top: 3%;
+    background-color: #F6F6F6;
+    border-radius: 50px;
+    p
+    {
+        margin: 0%;
+    }
+    div
+    {
+        display: flex;
+    }
+}
+
+.Numero
+{
+    padding: 1.5% 3.5% 1.5% 3.5%;
+    background-color: #9356DC;
+    border: none;
+    border-radius: 100px;
+    color: white;
+}
+
+.Compositionmenu
+{
+    padding: 2%;
+    i
+    {
+        color: gray;
+        padding-left: 5%;
+    }
+    p
+    {
+        padding-left: 5%;
+    }
+}
+
+/* Mise en page Restaurants */
+main
+{
+    background-color: #F6F6F6;
+    padding-bottom: 10%;
+    h2
+    {
+        padding: 10% 0% 0% 3%;
+    }
+}
+.Restaurants
+{
+    width: 90%;
+    height: 250px;
+    padding: 0%;
+    margin-left: 5%;
+    margin-bottom: 5%;
+    background-color: white;
+    border-radius: 20px;
+
+    button
+    {
+        border-style: none;
+        background: none;
+        font-size: 1.3em;
+    }
+
+    button:hover
+    {
+        i
+        {
+            background-image:linear-gradient(#FF79DA, #9356DC);
+        }
+    }
+}
+
+#ListeRestaurants
+{
+    img
+    {
+        width: 100%;
+        height: 160px;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        object-fit: cover;
+    }
+
+    h3
+    {
+        color: black;
+        margin: 0%;
+        padding-left: 3%;
+        padding-top: 2%;
+    }
+
+    p
+    {
+        color: black;
+        margin: 0%;
+        padding-left: 3%;
+        padding-top: 2%;
+    }
+}
+
+.Legende
+{
+    display: flex;
+}
+
+/* Mise en page footer */
+footer
+{
+    padding-top: 1%;
+    padding-bottom: 5%;
+    background-color: #353535;
+    color: white;
+
+    h1
+    {
+        padding-left: 2%;
+    }
+    i
+    {
+        color: white;
+    }
+    p
+    {
+        margin: 0%;
+        color: white;
+    }
+
+    div
+    {
+        padding-left: 2%;
+        padding-top: 1%;
+        padding-bottom: 1%;
+    }
+}
+
+#Proposer 
+{
+    a
+    {
+        display: flex;
+    }
+    p
+    {
+        padding-left: 3%;
+    }
+}
+
+#Partenaire
+{
+    a
+    {
+        display: flex;
+    }
+    p
+    {
+        padding-left: 3%;
+    }
+}
