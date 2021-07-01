@@ -18,7 +18,7 @@
             </header>
 
             <section id="Recherche">
-                <div id="Lieu">
+                <div id="RechercheLieu">
                     <i class="fas fa-map-marker-alt"></i>
                     <form class="fenetrerecherche" method="post" action="Recherche.php">
                         <div>
@@ -28,9 +28,9 @@
                 </div>
 
                 <div id="Reservation">
-                    <h1>Réservez le menu qui vous convient</h1>
+                    <h2>Réservez le menu qui vous convient</h2>
                     <p>Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
-                    <button class="bouton_rechercher" type="submit">Explorer nos restaurants</button>
+                    <a id="Explorer" href="#ListeRestaurants">Explorer nos restaurants</a>
                 </div>
             </section>
 
@@ -52,7 +52,7 @@
                     </div>
                 </div>
 
-                <div class="Fonctionnement">
+                <div id="Degustez" class="Fonctionnement">
                     <p class="Numero">3</p>
                     <div class="Compositionmenu">
                         <i class="fas fa-store"></i>
@@ -69,12 +69,14 @@
                         <div class="Restaurants">
                             <a href="page1.html" id="Lapalettedugout">
                                 <img src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="Lapalettedugout" class="imgrest">
+                                <span class="Nouveau">Nouveau</span>
                                 <div class="Legende">
                                     <div class="TitrePhoto">
                                         <h3>La palette du goût</h3>
                                         <p>Ménilmontant</p>
                                     </div>
-                                    <button class="Coeur" type="submit"><i class="far fa-heart"></i></button>
+                                    <i id="Coeurbord1" class="far fa-heart"></i>
+                                    <i id="Coeurplein1" class="fas fa-heart"></i>
                                 </div>
                             </a>
                         </div>
@@ -82,12 +84,14 @@
                         <div class="Restaurants">
                             <a href="page2.html" id="Lanoteenchantee">
                                 <img src="images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="Lanoteenchantee" class="imgrest">
+                                <span class="Nouveau">Nouveau</span>
                                 <div class="Legende">
                                     <div class="TitrePhoto">    
                                         <h3>La note enchantée</h3>
                                         <p>Charonne</p>
                                     </div>
-                                    <button class="Coeur" type="submit"><i class="far fa-heart"></i></button>
+                                    <i id="Coeurbord2" class="far fa-heart"></i>
+                                    <i id="Coeurplein2" class="fas fa-heart"></i>
                                 </div>
                             </a>
                         </div>
@@ -95,12 +99,14 @@
                         <div class="Restaurants">
                             <a href="page3.html" id="Alafrancaise">
                                 <img src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="Alafrancaise" class="imgrest">
+                                <span class="Nouveau">Nouveau</span>
                                 <div class="Legende">
                                     <div class="TitrePhoto">
                                         <h3>À la française</h3>
                                         <p>Cité Rouge</p>
                                     </div>
-                                    <button class="Coeur" type="submit"><i class="far fa-heart"></i></button>
+                                    <i id="Coeurbord3" class="far fa-heart"></i>
+                                    <i id="Coeurplein3" class="fas fa-heart"></i>
                                 </div>
                             </a>
                         </div>
@@ -108,12 +114,14 @@
                         <div class="Restaurants">
                             <a href="page4.html" id="Ledelicedessens">
                                 <img src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="Ledelicedessens" class="imgrest">
+                                <span class="Nouveau">Nouveau</span>
                                 <div class="Legende">
                                     <div class="TitrePhoto"> 
                                         <h3>Le délice des sens</h3>
                                         <p>Folie-Méricourt</p>
                                     </div>
-                                    <button class="Coeur" type="submit"><i class="far fa-heart"></i></button>
+                                    <i id="Coeurbord4" class="far fa-heart"></i>
+                                    <i id="Coeurplein4" class="fas fa-heart"></i>
                                 </div>
                             </a>
                         </div>
@@ -143,7 +151,7 @@
                         </a>
                     </div>
                     <div id="Contact">
-                        <a href="#">
+                        <a href="mailto:contact@ohmyfood.fr">
                             <p>Contact</p>
                         </a>
                     </div>
