@@ -4,14 +4,14 @@
 @font-face
 {
     font-family: 'Roboto';
-    src: url('fonts/Roboto-Light.ttf') format('truetype');
+    src: url('../fonts/Roboto-Light.ttf') format('truetype');
 
 }
 
 @font-face
 {
     font-family: 'Roboto-bold';
-    src: url('fonts/Roboto-Bold.ttf') format('truetype');
+    src: url('../fonts/Roboto-Bold.ttf') format('truetype');
 
 }
 
@@ -19,7 +19,7 @@
 @font-face
 {
     font-family: 'Shrikhand';
-    src: url('fonts/Shrikhand-Regular.ttf') format('truetype');
+    src: url('../fonts/Shrikhand-Regular.ttf') format('truetype');
 }
 
 /*Définition body*/
@@ -31,7 +31,7 @@ body
     margin: 0%;
 }
 
-#Logosite, h1, h2, h3
+.NomSite
 {
     font-family: 'Shrikhand';
 }
@@ -230,6 +230,31 @@ main
     bottom: 58%;
 }
 
+/*
+.Legende
+{
+    i:hover
+    {
+        color: #9356DC;
+    }
+}
+*/
+
+.Legende{
+    i::before {
+    content: "<i class="fas fa-heart"></i>";
+    transition: color 1s ease-out;
+}
+}
+.Legende{
+    i:hover::before{
+        content: "<i class="fas fa-heart"></i>";
+        background: linear-gradient( #9356DC, #FF79DA);;
+        color:#9356DC;
+        cursor: pointer;
+}
+}
+/*
 #Coeurplein1, #Coeurplein2, #Coeurplein3, #Coeurplein4
 {
     visibility: hidden;
@@ -278,6 +303,7 @@ main
 {
     background-image:linear-gradient(#FF79DA, #9356DC);
 }
+*/
 
 #ListeRestaurants
 {
