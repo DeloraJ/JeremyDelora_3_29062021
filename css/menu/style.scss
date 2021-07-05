@@ -46,8 +46,8 @@ a:link
 {
     text-align: center;
     padding-top: 5%;
-    padding-bottom: 2%;
-    a
+    padding-bottom: 4%;
+    i
     {
         position: absolute;
         left: 3%;
@@ -57,7 +57,9 @@ a:link
     }
     h1
     {
-        width: 50%;
+        width: 100%;
+        font-size: 4em;
+        margin: 0%;
     }
 }
 
@@ -70,20 +72,27 @@ main
         object-fit: cover;
         width: 100%;
         margin: 0%;
+        z-index: -1;
         img
         {
             width: 100%;
+            height: 800px;
         }
     }
 }
 
 .MenuRestaurant
 {
-    border-top-left-radius: 100px;
+    background-color: #f6f6f6;
+    display: flex;
+    margin-bottom: 10px;
+    flex-direction: column;
+    border: 1px solid #f6f6f6;
+    margin-top: -100px;
     border-top-right-radius: 100px;
+    border-top-left-radius: 100px;
     position: relative;
-    bottom: 5%;
-    width: 100%;
+    padding: 0 10px 0 10px;
 }
 
 #NomRestaurant 
@@ -94,12 +103,14 @@ main
     {
         font-size: 5em;
         margin-right: 10%;
+        width: 75%;
     }
-    button
+    .far
     {
         background-color: #F6F6F6;
         border: none;
         font-size: 4em;
+        margin-top: 10%;
     }
 }
 
