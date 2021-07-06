@@ -1,0 +1,366 @@
+@charset "UTF-8";
+/* Définition polices */
+/* Police texte */
+@font-face {
+  font-family: 'Roboto';
+  src: url("../../fonts/Roboto-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'Roboto-bold';
+  src: url("../../fonts/Roboto-Bold.ttf") format("truetype");
+}
+
+/* Police logo et titre */
+@font-face {
+  font-family: 'Shrikhand';
+  src: url("../../fonts/Shrikhand-Regular.ttf") format("truetype");
+}
+
+/*Définition body*/
+body {
+  font-family: 'Roboto';
+  color: black;
+  margin: 0%;
+}
+
+.NomSite {
+  font-family: 'Shrikhand';
+}
+
+a:link {
+  text-decoration: none;
+  color: black;
+}
+
+/* Mise en page header */
+#Logosite {
+  text-align: center;
+  padding-top: 5%;
+  padding-bottom: 4%;
+}
+
+#Logosite i {
+  position: absolute;
+  left: 3%;
+  top: 4%;
+  font-size: 3em;
+  color: black;
+}
+
+#Logosite h1 {
+  width: 100%;
+  font-size: 4em;
+  margin: 0%;
+}
+
+/* Mise en page Menu*/
+main {
+  background-color: #F6F6F6;
+}
+
+main figure {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  margin: 0%;
+  z-index: -1;
+}
+
+main figure img {
+  width: 100%;
+  height: 800px;
+}
+
+.MenuRestaurant {
+  background-color: #f6f6f6;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 10px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border: 1px solid #f6f6f6;
+  margin-top: -100px;
+  border-top-right-radius: 100px;
+  border-top-left-radius: 100px;
+  position: relative;
+  padding: 0 10px 0 10px;
+}
+
+#NomRestaurant {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 5%;
+}
+
+#NomRestaurant h2 {
+  font-size: 5em;
+  margin-right: 10%;
+  width: 75%;
+}
+
+#NomRestaurant .far {
+  background-color: #F6F6F6;
+  border: none;
+  font-size: 4em;
+  margin-top: 10%;
+}
+
+.Menu h3 {
+  width: 12.5%;
+  margin-left: 5%;
+  margin-top: 5%;
+  margin-bottom: 3%;
+  font-size: 3em;
+  font-weight: normal;
+  border-bottom: solid 5px #99e2d0;
+}
+
+.ListePlats {
+  margin-bottom: 8%;
+}
+
+.Plat {
+  background-color: white;
+  border-radius: 40px;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 3%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 2.5em;
+  border: none;
+  -webkit-box-shadow: 0px 0px 10px 4px rgba(222, 222, 222, 0.45);
+          box-shadow: 0px 0px 10px 4px rgba(222, 222, 222, 0.45);
+}
+
+.Plat h4 {
+  margin: 4%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.Plat p {
+  margin: 4%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.DescriptifPlat {
+  width: 90%;
+}
+
+.prix {
+  width: 10%;
+  padding-top: 12%;
+  padding-right: 1%;
+  font-weight: bold;
+}
+
+.OK {
+  background-color: #99e2d0;
+  width: 0%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-bottom-right-radius: 40px;
+  border-top-right-radius: 40px;
+  position: relative;
+}
+
+.OK i {
+  opacity: 0;
+  color: white;
+}
+
+/*Animation apparation ouverture page*/
+.ListePlats {
+  -webkit-animation: ouverture-page 1s both ease-in-out;
+          animation: ouverture-page 1s both ease-in-out;
+}
+
+@-webkit-keyframes ouverture-page {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes ouverture-page {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+.Plat:nth-child(1) {
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+}
+
+.Plat:nth-child(2) {
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+}
+
+.Plat:nth-child(3) {
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+.Plat:nth-child(4) {
+  -webkit-animation-delay: 1.5s;
+          animation-delay: 1.5s;
+}
+
+/* Animation plats */
+.Plat:hover .OK {
+  display: initial;
+  background-color: #99e2d0;
+  width: 20%;
+  border-bottom-right-radius: 40px;
+  border-top-right-radius: 40px;
+  -webkit-transition-duration: 0.8s;
+          transition-duration: 0.8s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.Plat:hover i {
+  opacity: 1;
+}
+
+.Plat:hover i {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: 0.8s ease-in-out;
+  transition: 0.8s ease-in-out;
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
+
+.Plat:hover .prix {
+  -webkit-transition: -webkit-transform 0.8s ease-in-out;
+  transition: -webkit-transform 0.8s ease-in-out;
+  transition: transform 0.8s ease-in-out;
+  transition: transform 0.8s ease-in-out, -webkit-transform 0.8s ease-in-out;
+  -webkit-transform: translateX(-20%);
+          transform: translateX(-20%);
+}
+
+.Plat:hover .DescriptifPlat {
+  width: 70%;
+  -webkit-transition-duration: 0.8s;
+          transition-duration: 0.8s;
+}
+
+/* Fin mise en page animation plats */
+.bouton_commander {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
+  background-image: linear-gradient(#FF79DA, #9356DC);
+  width: 50%;
+  font-size: 3em;
+  color: white;
+  margin-bottom: 10%;
+  margin-top: 4%;
+  padding: 4% 8% 4% 8%;
+  border-radius: 100px;
+}
+
+#bouton_commander {
+  text-align: center;
+}
+
+#bouton_commander button:hover {
+  -webkit-box-shadow: 0px 0px 20px 0px #8B8B8B;
+          box-shadow: 0px 0px 20px 0px #8B8B8B;
+  opacity: 0.9;
+}
+
+/* Mise en page footer */
+footer {
+  padding-top: 1%;
+  padding-bottom: 5%;
+  background-color: #353535;
+  color: white;
+  font-size: 2em;
+}
+
+footer h2 {
+  padding-left: 2%;
+}
+
+footer i {
+  color: white;
+}
+
+footer p {
+  margin: 0%;
+  color: white;
+}
+
+footer div {
+  padding-left: 2%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+
+#Proposer a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#Proposer p {
+  padding-left: 3%;
+}
+
+#Partenaire a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#Partenaire p {
+  padding-left: 3%;
+}
+/*# sourceMappingURL=style.css.map */
