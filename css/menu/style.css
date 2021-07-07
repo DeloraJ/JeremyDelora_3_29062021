@@ -401,4 +401,118 @@ footer div {
 #Partenaire p {
   padding-left: 3%;
 }
+
+/* Mise en page au format Tablette */
+@media screen and (min-width: 426px) {
+  #Logosite {
+    padding-top: 3%;
+    padding-bottom: 3%;
+  }
+  #Logosite i {
+    padding-top: 1%;
+  }
+  footer {
+    padding-bottom: 2%;
+  }
+  footer h2 {
+    margin-bottom: 4%;
+  }
+  footer div {
+    padding-bottom: 2%;
+  }
+}
+
+/* Mise en page au format Desktop */
+@media screen and (min-width: 990px) {
+  #Logosite {
+    padding-top: 0.5%;
+    padding-bottom: 0%;
+    font-size: 0.6em;
+  }
+  #Logosite i {
+    font-size: 2.5em;
+    padding-bottom: 10%;
+    padding-top: 0%;
+  }
+  /*
+    #PhotoRestaurant
+    {
+        img
+        {
+            //Problème proportion taille image
+        }
+    }
+    */
+  #NomRestaurant h2 {
+    margin-top: 3%;
+    font-size: 2.5em;
+  }
+  .Coeur {
+    top: -10px;
+    font-size: 0.7em;
+  }
+  .EntreePlatDessert {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+  }
+  .ListePlats {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .Menu {
+    width: 200%;
+  }
+  .Menu h3 {
+    font-size: 1.5em;
+  }
+  .DescriptifPlat h4 {
+    font-size: 0.4em;
+  }
+  .DescriptifPlat p {
+    font-size: 0.4em;
+  }
+  .prix {
+    font-size: 0.45em;
+  }
+  .Plat {
+    width: 90%;
+  }
+  .DescriptifPlat {
+    width: 100%;
+  }
+  .OK {
+    font-size: 0.5em;
+  }
+  .bouton_commander {
+    width: 25%;
+    font-size: 1.7em;
+    color: white;
+    margin-bottom: 4%;
+    margin-top: 2%;
+    padding: 2% 2% 2% 2%;
+    border-radius: 100px;
+  }
+  footer {
+    padding-bottom: 2%;
+  }
+  footer h2 {
+    font-size: 0.8em;
+  }
+  #Liensfooter {
+    font-size: 0.6em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  #Liensfooter div {
+    width: 25%;
+  }
+}
 /*# sourceMappingURL=style.css.map */
