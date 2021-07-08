@@ -46,12 +46,14 @@ a:link {
   left: 3%;
   top: 4%;
   font-size: 3em;
+  font-size-adjust: 0.2;
   color: black;
 }
 
 #Logosite h1 {
   width: 100%;
-  font-size: 4.2em;
+  font-size: 4.2rem;
+  font-size-adjust: 0.2;
   margin: 0%;
 }
 
@@ -70,7 +72,8 @@ main figure {
 
 main figure img {
   width: 100%;
-  height: 700px;
+  -moz-height: 400px;
+  -webkit-height: 700px;
 }
 
 .MenuRestaurant {
@@ -85,8 +88,8 @@ main figure img {
           flex-direction: column;
   border: 1px solid #f6f6f6;
   margin-top: -100px;
-  border-top-right-radius: 100px;
-  border-top-left-radius: 100px;
+  border-top-right-radius: 60px;
+  border-top-left-radius: 60px;
   position: relative;
   padding: 0 10px 0 10px;
 }
@@ -97,7 +100,7 @@ main figure img {
   font-style: normal;
   position: relative;
   margin-top: 4%;
-  top: 50px;
+  top: 30px;
 }
 
 .Coeur .fas {
@@ -113,6 +116,7 @@ main figure img {
   -webkit-transition: opacity 400ms ease-in-out;
   transition: opacity 400ms ease-in-out;
   font-size: 4em;
+  font-size-adjust: 0.3;
 }
 
 .Coeur .fas:hover {
@@ -133,6 +137,7 @@ main figure img {
 
 #NomRestaurant h2 {
   font-size: 4.2em;
+  font-size-adjust: 0.2;
   margin-right: 10%;
   margin-top: 8%;
   width: 75%;
@@ -142,6 +147,7 @@ main figure img {
   background-color: #F6F6F6;
   border: none;
   font-size: 4em;
+  font-size-adjust: 0.3;
   margin-top: 10%;
 }
 
@@ -151,6 +157,7 @@ main figure img {
   margin-top: 5%;
   margin-bottom: 3%;
   font-size: 3em;
+  font-size-adjust: 0.2;
   font-weight: normal;
   border-bottom: solid 5px #99e2d0;
 }
@@ -169,6 +176,7 @@ main figure img {
   display: -ms-flexbox;
   display: flex;
   font-size: 2.5em;
+  font-size-adjust: 0.2;
   border: none;
   -webkit-box-shadow: 0px 0px 10px 4px rgba(222, 222, 222, 0.45);
           box-shadow: 0px 0px 10px 4px rgba(222, 222, 222, 0.45);
@@ -222,7 +230,7 @@ main figure img {
 }
 
 /*Animation apparation ouverture page*/
-.ListePlats {
+.Plat {
   -webkit-animation: ouverture-page 1s both ease-in-out;
           animation: ouverture-page 1s both ease-in-out;
 }
@@ -230,8 +238,8 @@ main figure img {
 @-webkit-keyframes ouverture-page {
   0% {
     opacity: 0;
-    -webkit-transform: translateY(10px);
-            transform: translateY(10px);
+    -webkit-transform: translateY(20px);
+            transform: translateY(20px);
   }
   100% {
     opacity: 1;
@@ -243,8 +251,8 @@ main figure img {
 @keyframes ouverture-page {
   0% {
     opacity: 0;
-    -webkit-transform: translateY(10px);
-            transform: translateY(10px);
+    -webkit-transform: translateY(20px);
+            transform: translateY(20px);
   }
   100% {
     opacity: 1;
@@ -253,24 +261,24 @@ main figure img {
   }
 }
 
-.Plat:nth-child(1) {
-  -webkit-animation-delay: 0s;
-          animation-delay: 0s;
+.Plat:nth-of-type(1) {
+  -webkit-animation-delay: 300ms;
+          animation-delay: 300ms;
 }
 
-.Plat:nth-child(2) {
-  -webkit-animation-delay: 0.5s;
-          animation-delay: 0.5s;
+.Plat:nth-of-type(2) {
+  -webkit-animation-delay: 600ms;
+          animation-delay: 600ms;
 }
 
-.Plat:nth-child(3) {
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
+.Plat:nth-of-type(3) {
+  -webkit-animation-delay: 900ms;
+          animation-delay: 900ms;
 }
 
-.Plat:nth-child(4) {
-  -webkit-animation-delay: 1.5s;
-          animation-delay: 1.5s;
+.Plat:nth-of-type(4) {
+  -webkit-animation-delay: 1200ms;
+          animation-delay: 1200ms;
 }
 
 /* Animation plats */
@@ -334,6 +342,7 @@ main figure img {
   background-image: linear-gradient(#FF79DA, #9356DC);
   width: 50%;
   font-size: 3em;
+  font-size-adjust: 0.2;
   color: white;
   margin-bottom: 10%;
   margin-top: 4%;
@@ -358,10 +367,13 @@ footer {
   background-color: #353535;
   color: white;
   font-size: 2.3em;
+  font-size-adjust: 0.2;
 }
 
 footer h2 {
   margin-left: 7%;
+  margin-bottom: 2%;
+  margin-top: 3%;
 }
 
 footer i {
@@ -390,6 +402,15 @@ footer div {
 
 #Proposer p {
   padding-left: 3%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 #Partenaire a {
@@ -400,6 +421,15 @@ footer div {
 
 #Partenaire p {
   padding-left: 3%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 /* Mise en page au format Tablette */
@@ -427,29 +457,30 @@ footer div {
   #Logosite {
     padding-top: 0.5%;
     padding-bottom: 0%;
-    font-size: 0.6em;
+    font-size: 0.5em;
   }
   #Logosite i {
     font-size: 2.5em;
+    font-size-adjust: 0.6;
     padding-bottom: 10%;
     padding-top: 0%;
   }
-  /*
-    #PhotoRestaurant
-    {
-        img
-        {
-            //Problème proportion taille image
-        }
-    }
-    */
+  #Logosite h1 {
+    font-size: 3rem;
+    font-size-adjust: 0.4;
+  }
+  figure img {
+    height: 500px;
+  }
   #NomRestaurant h2 {
     margin-top: 3%;
     font-size: 2.5em;
+    font-size-adjust: 0.5;
   }
   .Coeur {
     top: -10px;
     font-size: 0.7em;
+    font-size-adjust: 0.9;
   }
   .EntreePlatDessert {
     display: -webkit-box;
@@ -469,15 +500,19 @@ footer div {
   }
   .Menu h3 {
     font-size: 1.5em;
+    font-size-adjust: 0.5;
   }
   .DescriptifPlat h4 {
     font-size: 0.4em;
+    font-size-adjust: 0.5;
   }
   .DescriptifPlat p {
     font-size: 0.4em;
+    font-size-adjust: 0.5;
   }
   .prix {
     font-size: 0.45em;
+    font-size-adjust: 0.4;
   }
   .Plat {
     width: 90%;
@@ -487,10 +522,12 @@ footer div {
   }
   .OK {
     font-size: 0.5em;
+    font-size-adjust: 0.6;
   }
   .bouton_commander {
     width: 25%;
     font-size: 1.7em;
+    font-size-adjust: 0.5;
     color: white;
     margin-bottom: 4%;
     margin-top: 2%;
@@ -502,9 +539,11 @@ footer div {
   }
   footer h2 {
     font-size: 0.8em;
+    font-size-adjust: 0.5;
   }
   #Liensfooter {
     font-size: 0.6em;
+    font-size-adjust: 0.5;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
